@@ -4,7 +4,6 @@ pandas
 numpy
 matplotlib
 imageio
-cv2
 IPython
 PIL
 ipywidgets
