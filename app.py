@@ -251,7 +251,10 @@ def extract_text_from_image(uploaded_image_path):
         return_tensors="pt",
     )
 
-    inputs = inputs.to("cuda")
+    # inputs = inputs.to("cuda")
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    inputs = inputs.to(device)
+    model = model.to(device)
 
     # Generate output
     output_ids = model.generate(**inputs, max_new_tokens=1024)
@@ -516,7 +519,10 @@ def hateful_meme_detection(image_path):
             return_tensors="pt",
         )
 
-        inputs = inputs.to("cuda")
+        # inputs = inputs.to("cuda")
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        inputs = inputs.to(device)
+        model = model.to(device)
 
         # Step 5: Generate the output from the model
         output_ids = model.generate(**inputs, max_new_tokens=1024)
