@@ -5,7 +5,6 @@ numpy
 matplotlib
 imageio
 IPython
-PIL
 ipywidgets
 deepface
 ultralytics
