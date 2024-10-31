@@ -12,7 +12,6 @@ transformers
 tensorflow
 keras
 bs4
-traceback
 streamlit_lottie
 json
 pickle
