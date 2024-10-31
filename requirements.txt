@@ -8,10 +8,7 @@ IPython
 ipywidgets
 deepface
 ultralytics
-transformers
 tensorflow
 keras
 bs4
 streamlit_lottie
-json
-pickle
